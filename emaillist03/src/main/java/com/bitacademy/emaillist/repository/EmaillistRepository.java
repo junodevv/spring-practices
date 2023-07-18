@@ -95,14 +95,14 @@ public class EmaillistRepository {
 			rs = pstmt.executeQuery();
 			
 			// 6. 결과처리할게 있나 -> sql문 실행하면 끝인데
-		    
+			System.out.println("insert성공");
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이버 로딩 실패: "+ e);
 		} catch (SQLException e) {
 			System.out.println("Error: "+ e);
 		} finally {// 6. 자원정리
 			try {
-				System.out.println("insert성공");
+				
 				if(rs != null) {
 					rs.close();
 				}
