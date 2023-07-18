@@ -9,12 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+/*import org.springframework.web.bind.annotation.RequestParam;*/
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 /*어노테이션(@)은 사전적 의미로는 주석이라는 뜻이다.
 자바에서 사용될 때의 어노테이션은 코드 사이에 주석처럼 쓰여서 특별한 의미, 기능을 수행하도록 하는 기술이다. 
-즉, 프로그램에게 추가적인 정보를 제공해주는 메타데이터(meta data: 데이터를 위한 데이터)*/
+즉, 프로그램에게 추가적인 정보를 제공해주는 메타데이터(meta data: 데이터를 위한 데이터)
+클래스, 메소드, 변수, 파라메터에 붙을 수 있음*/
 @Controller
 public class HelloController {
 	
@@ -25,7 +27,7 @@ public class HelloController {
 	}
 	
 	@RequestMapping("/hello2")
-	public String hello2(String name) {// request중 parameter가 name인 애를 찾아서 넣음
+	public String hello2(/* @RequestParam 생략*/ String name) {// request중 parameter가 name인 애를 찾아서 넣음
 		System.out.println("name: " + name);
 		return "/WEB-INF/views/hello.jsp";
 	}
