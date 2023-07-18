@@ -9,10 +9,12 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import com.bitacademy.guestbook.vo.GuestbookVo;
 
 
-
+@Repository
 public class GuestbookRepository {
 	public List<GuestbookVo> findAll() {
 		List<GuestbookVo> result = new ArrayList<>();
