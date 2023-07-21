@@ -4,6 +4,7 @@
 	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
 			<charset>UTF-8</charset>
+			<!-- formating: 시간, 쓰레드, 레벨, 로거(5개), 메시지 -->
 			<Pattern>
 				%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n
 			</Pattern>
@@ -17,6 +18,7 @@
 				%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n
 			</Pattern>
 		</encoder>
+		<!-- 로그메시지의 파일 크기가 50kb가 넘으면 압축해서 저장해라, 압축파일은 1~10까지만 유지해라 -->
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
 			<FileNamePattern>/logex/logex2.%i.log.zip</FileNamePattern>
 			<MinIndex>1</MinIndex>
