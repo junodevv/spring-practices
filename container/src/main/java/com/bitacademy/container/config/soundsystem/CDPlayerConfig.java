@@ -10,6 +10,7 @@ import com.bitacademy.container.user.User;
 @ComponentScan(basePackages= {"com.bitacademy.container.soundsystem"})
 public class CDPlayerConfig {
 	
+}
 	/* 명시적 설정 */
 //	@Bean
 //	public User user() {
@@ -20,4 +21,4 @@ public class CDPlayerConfig {
 //	public Friend friend() {
 //		return new Friend();
 //	}
-}
+
