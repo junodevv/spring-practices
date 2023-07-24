@@ -1,0 +1,15 @@
+package com.bitacademy.container.config.system.mixing;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+/*
+ * <----- JavaConfig2, JavaConfig1
+ * import
+ *  
+ *  JavaConfig2 + JavaConfig1
+ */
+@Configuration
+@Import({DVDConfig.class, DVDPlayerConfig.class})
+public class VideoSystemConfig {
+
+}
