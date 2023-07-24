@@ -21,4 +21,4 @@ public class CDPlayerConfig {
 //	public Friend friend() {
 //		return new Friend();
 //	}
-
+ 
