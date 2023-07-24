@@ -18,13 +18,28 @@
 		<org.springframework-version>5.3.26</org.springframework-version>
 	</properties>
 	
-		<dependencies>
+	<dependencies>
 		<!-- Spring Context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		
+		<!-- Spring Test -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- jUnit5(jupiter) -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.9.1</version>
+		</dependency>
+		
 	</dependencies>
 	
 	<build>
