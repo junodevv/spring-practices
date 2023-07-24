@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bitacademy</groupId>
+		<artifactId>spring-practices</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>container</artifactId>
+
+	<properties><!--프로퍼티: 이름과 값이 있는 애들-->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.outputEncoding>UTF-8</project.build.outputEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<!--사용자 지정 프로퍼티, 버전을 이걸로 사용해서 통일할수 있음, 변수같은 느낌-->
+		<org.springframework-version>5.3.26</org.springframework-version>
+	</properties>
+	
+		<dependencies>
+		<!-- Spring Context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<finalName>container</finalName>
+	</build>
+</project>
